@@ -1,0 +1,118 @@
+/*header*/
+.header{}
+.header .logo{width: 130px;}
+.header .phone{}
+.header .phone i{font-size: 30px;}
+
+/*banner*/
+.i_banner{width:100%;height: 660px;overflow: hidden;background: url("../images/banner.jpg") no-repeat;background-size: cover;background-position: center center;}
+.b_form{background: rgba(0,0,0,0.6);border-radius: 10px;}
+.b_form .xb-form{width: 400px;}
+.b_form .xb-form label.xb-lable{color: #fff;}
+.b_form .xb-form .layui-btn{width:160px;font-size: 16px !important;}
+
+/*为什么孩子要接受编程教育*/
+.whyLearn ul{display: flex;justify-content: space-between;}
+.whyLearn li{display: flex;justify-content: center;flex-direction: column;width: 33.3%;box-sizing: border-box;padding: 20px;}
+.whyLearn li .main_img{height: 170px;}
+.whyLearn li .main_img img{height: 100%;width: auto;display: block;margin: 0 auto;}
+.whyLearn li h2{font-size: 20px;text-align: center;}
+.whyLearn li p{font-size: 14px;color: #666;text-align: center;line-height: 25px;}
+
+/*ledClassBtn*/
+.ledClassBtn{}
+.ledClassBtn{display: flex;justify-content: center;align-items: center;position: relative;margin-top: 40px;width: 200px;height: 50px;}
+.ledClassBtn a{width:100%;height: 100%;background: linear-gradient(270deg,#ffa800, #ffa800);border-radius: 40px;color: #fff;font-size: 25px;position: absolute;z-index: 2;line-height: 50px;text-align: center;}
+.ledClassBtn span{transition: opacity .3s ease;position: absolute;width: 180px;height: 50px;box-shadow: 0 10px 15px 0 rgba(255,205,108,.7);border-radius: 40px;left: 10px;top: 0;z-index: 1;opacity: 1;}
+
+/*为什么选择喜编*/
+.whyChoos{overflow: hidden;background: url("../images/banner2.jpg") no-repeat;background-size: cover;background-position: center center;}
+.whyLike ul{display: flex;justify-content: space-between;}
+.whyLike li{width: 33.3%;text-align: center;}
+.whyLike li .icon {position: relative;display: flex;display: -webkit-flex;justify-content: center;align-items: center;margin: 0 auto;border: 1px solid rgba(255,255,255,0.5);border-radius: 100%;width: 140px;height: 140px;}
+.whyLike li .icon .yes {
+    transition: -webkit-transform 0.5s ease-out;
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -moz-transition: -moz-transform 0.5s ease-out;
+    -o-transition: -o-transform 0.5s ease-out;
+    -ms-transition: -ms-transform 0.5s ease-out;
+}
+.whyLike li .icon .yes i{font-size: 100px;}
+.whyLike li:hover .icon{background: rgba(255,255,255,0.3);}
+.whyLike li:hover .icon .yes {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+/*课程*/
+.course ul{display: flex;justify-content: space-between;align-items: center;}
+.course li{width: 33.3%;box-sizing: border-box;}
+.course li .box{width: 290px;height:550px;box-sizing:border-box;margin: 0 auto;transition: all .3s;-moz-transition: all .3s;-webkit-transition: all .3s;-o-transition: all .3s;}
+.course li .box:hover{box-shadow: 0 0 15px #c1c1c1;transform: translate(0, -15px);}
+.course li .box .icon-polygons{position: relative;width: 120px;height: 66px;line-height: 33px;font-size: 20px;margin: 36px auto 36px;color: #fff;text-align: center;}
+.course li .box .icon-polygons .top{width: 0;height: 0;position: absolute;left: 0;top: -36px;border-left: 60px solid transparent;border-right: 60px solid transparent;border-bottom-width: 36px;border-bottom-style: solid;}
+.course li .box .icon-polygons .bottom {width: 0;height: 0;position: absolute;left: 0;top: 66px;border-left: 60px solid transparent;border-right: 60px solid transparent;border-bottom: 0;border-top-width: 36px;border-top-style: solid;}
+.course li:first-child .box .icon-polygons{background-color: #ffb035;}
+.course li:first-child .box .icon-polygons .top{border-bottom-color: #ffb035;}
+.course li:first-child .box .icon-polygons .bottom{border-top-color: #ffb035;}
+.course li:nth-child(2) .box .icon-polygons{background-color: #ea8430;}
+.course li:nth-child(2) .box .icon-polygons .top{border-bottom-color: #ea8430;}
+.course li:nth-child(2) .box .icon-polygons .bottom{border-top-color: #ea8430;}
+.course li:nth-child(3) .box .icon-polygons{background-color: #f66341;}
+.course li:nth-child(3) .box .icon-polygons .top{border-bottom-color: #f66341;}
+.course li:nth-child(3) .box .icon-polygons .bottom{border-top-color: #f66341;}
+
+.course li .box .icon-level i{font-size: 40px;}
+.course li:first-child .icon-level i{color: #ffb035;}
+.course li:nth-child(2) .icon-level i{color: #ffb035;}
+.course li:nth-child(3) .icon-level i{color: #f66341;}
+
+.course li .desc{width: 72%;height:130px;box-sizing:border-box;margin: 0 auto;font-size: 14px;line-height: 25px;color: #666;}
+
+.course li .icon-num{margin: 0 auto;width: 100px;height: 100px;line-height: 100px;color: #fff;font-size: 20px;border-radius: 100%;text-align: center;}
+.course li:first-child .icon-num{background-color: #ffb035;}
+.course li:nth-child(2) .icon-num{background-color: #ffb035;}
+.course li:nth-child(3) .icon-num{background-color: #f66341;}
+
+/*讲师*/
+.i_teacher ul{display: flex;justify-content: space-between;}
+.i_teacher li{width: 25%;position: relative;box-sizing: border-box;padding: 0 10px;display: flex;justify-content: center;}
+.i_teacher li .main_img{box-shadow: 0 0 15px #c1c1c1;}
+.i_teacher li .main_img img{width: 100%;height: auto;display: block;}
+.i_teacher li .desc{width: 100%;height:100%;position: absolute;left: 0;top:0;box-sizing: border-box;padding-top: 15%;}
+.i_teacher li .desc .desc_img{width: 160px;height: 160px;margin: 0 auto;border-radius: 100%;overflow: hidden;}
+.i_teacher li .desc .desc_p{}
+.i_teacher li .desc .desc_p h3{font-size: 25px;text-align: center;color: #ffb035;font-weight: bold;}
+.i_teacher li .desc .desc_p p{font-size: 14px;line-height: 30px;color: #999;}
+
+/*什么是“全真立体”编程*/
+.allTrue ul{display: flex;justify-content: space-between;}
+.allTrue li{width: 550px;}
+.allTrue li .desc .main_img{width: 210px;}
+.allTrue li .desc p{line-height: 30px;text-indent: 33px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

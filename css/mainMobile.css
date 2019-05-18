@@ -1,0 +1,104 @@
+@media screen and (min-width: 320px) {
+    html{font-size: 32px;}
+}
+@media screen and (min-width: 375px) {
+    html{font-size: 37.5px;}
+}
+@media screen and (min-width: 414px) {
+    html{font-size: 41.4px;}
+}
+@media screen and (min-width: 768px) {
+    html{font-size: 76.8px;}
+}
+
+.webApp{width: 10rem;max-width: 100%;margin: 0 auto;}
+
+
+.logo{width: 3rem;}
+
+/*banner*/
+.banner{}
+.banner img{width: 100%;height: auto;display: block;}
+
+/*领课表单*/
+.b_moform{padding: 0.3rem;}
+.b_moform .xb-form{}
+.b_moform .xb-form label.xb-lable{}
+.b_moform .xb-form .layui-btn{width: 100% !important;font-size: 0.6rem !important;}
+
+/*什么是“全真立体”编程*/
+.allTrueMo{}
+.allTrueMo .desc{padding: 0.3rem;}
+.allTrueMo .desc p{color: #666;line-height: 30px;font-size: 0.5rem;margin-bottom: 0.4rem;text-indent: 1rem;}
+.allTrueMo .desc p:last-child{margin: 0;}
+.main_img{}
+.main_img img{width: 80%;height: auto;display: block;margin: 0 auto;}
+
+.ledClassBtn{}
+.ledClassBtn{display: flex;justify-content: center;align-items: center;position: relative;width: 150px;height: 40px;}
+.ledClassBtn a{width:100%;height: 100%;background: linear-gradient(270deg,#ffa800, #ffa800);border-radius: 40px;color: #fff;font-size: 20px;position: absolute;z-index: 2;line-height: 40px;text-align: center;}
+.ledClassBtn span{transition: opacity .3s ease;position: absolute;width: 130px;height: 40px;box-shadow: 0 10px 15px 0 rgba(255,205,108,.7);border-radius: 40px;left: 10px;top: 0;z-index: 1;opacity: 1;}
+
+.whyChoos{overflow: hidden;background: url("../images/banner2.jpg") no-repeat;background-size: cover;background-position: center center;}
+.whyLike ul{display: flex;flex-direction: column;}
+.whyLike li{display: flex;justify-content: flex-start;align-items: center;padding: 0.3rem;}
+.whyLike li .icon {position: relative;display: flex;display: -webkit-flex;justify-content: center;align-items: center;margin: 0 auto;border: 1px solid rgba(255,255,255,0.5);border-radius: 100%;width: 1.5rem;height: 1.5rem;}
+.whyLike li .icon .yes i{font-size: 1.3rem;}
+.whyLike li .desc{width: 7.5rem;}
+.whyLike li .desc span{font-size: 0.6rem}
+
+/*课程*/
+.course ul{display: flex;flex-direction: column;}
+.course li{box-sizing: border-box;    padding: 0.5rem 0;}
+.course li .box{box-sizing:border-box;position: relative;}
+.course li .box .icon-polygons{position: relative;width: 2.2rem;height: 1.5rem;line-height: 20px;font-size:0.4rem;color: #fff;text-align: center;}
+.course li .box .icon-polygons .top{width: 0;height: 0;position: absolute;left: 0;top: -0.7rem;border-left: 1.1rem solid transparent;border-right: 1.1rem solid transparent;border-bottom-width: 0.7rem;border-bottom-style: solid;}
+.course li .box .icon-polygons .bottom {width: 0;height: 0;position: absolute;left: 0;top:1.5rem;border-left: 1.1rem solid transparent;border-right: 1.1rem solid transparent;border-bottom: 0;border-top-width: 0.7rem;border-top-style: solid;}
+.course li:first-child .box .icon-polygons{background-color: #ffb035;}
+.course li:first-child .box .icon-polygons .top{border-bottom-color: #ffb035;}
+.course li:first-child .box .icon-polygons .bottom{border-top-color: #ffb035;}
+.course li:nth-child(2) .box .icon-polygons{background-color: #ea8430;}
+.course li:nth-child(2) .box .icon-polygons .top{border-bottom-color: #ea8430;}
+.course li:nth-child(2) .box .icon-polygons .bottom{border-top-color: #ea8430;}
+.course li:nth-child(3) .box .icon-polygons{background-color: #f66341;}
+.course li:nth-child(3) .box .icon-polygons .top{border-bottom-color: #f66341;}
+.course li:nth-child(3) .box .icon-polygons .bottom{border-top-color: #f66341;}
+.course li .box .icon-level{position: absolute;right: 0.3rem;top:-1rem;}
+.course li .box .icon-level i{font-size: 1rem;}
+.course li:first-child .icon-level i{color: #ffb035;}
+.course li:nth-child(2) .icon-level i{color: #ffb035;}
+.course li:nth-child(3) .icon-level i{color: #f66341;}
+
+.course li .desc{box-sizing:border-box;margin: 0 auto;font-size: 0.6rem;line-height:30px;color: #666;padding: 0.3rem}
+.course li .desc span{font-size: 0.8rem;}
+
+.course li .icon-num{margin: 0 auto;width: 100px;height: 100px;line-height: 100px;color: #fff;font-size: 20px;border-radius: 100%;text-align: center;}
+.course li:first-child .icon-num{background-color: #ffb035;}
+.course li:nth-child(2) .icon-num{background-color: #ffb035;}
+.course li:nth-child(3) .icon-num{background-color: #f66341;}
+
+.i_teacher ul{}
+.i_teacher li{display: flex;justify-content: flex-start;align-items: center;padding: 0.3rem 0 0 0;}
+.i_teacher li .main_img{width: 40%;}
+.i_teacher li .desc{width: 60%; padding: 0 0 0 0.2rem;box-sizing: border-box;}
+.i_teacher li .desc h3{font-size: 0.6rem;}
+.i_teacher li .desc p{color: #999;font-size: 0.5rem;line-height: 25px;}
+
+.navFixed{position: fixed;width: 100%;left:0;right: 0;bottom: 0;display: flex;justify-content: space-around;align-items:center;padding: 0.3rem;border-top: 1px solid #ddd;}
+.navFixed a{background: #f66341;color: #fff;padding: 0.3rem 0.4rem;line-height: 1rem;border-radius: 3px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
