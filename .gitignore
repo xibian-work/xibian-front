@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+### template
+
+# Folders #
+.DS_Store
+*/.DS_Store
+target
+.idea
+
