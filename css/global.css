@@ -50,7 +50,8 @@ ul,ol,li,dl,dd {
     padding: 0;list-style: none outside none;
 }
 a {
-    color: #333;   /*黑蓝色*/
+    /*color: #333;   !*黑蓝色*!*/
+    color: white;
     outline: medium none;
     text-decoration: none;
     background: transparent;

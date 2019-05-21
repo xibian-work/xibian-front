@@ -1,5 +1,5 @@
 var main = function () {
-
+    var customerId;
 	var init = function () {
 
         xibian.validateForm("#led_class",formAjaxFun);
@@ -17,20 +17,23 @@ var main = function () {
 
     var formAjaxFun = function(){
         var index = layer.load();
-        var obj = {
-
+        var obj = {};
+        obj.phone = $("#phone").val();
+        obj.studentName = $("#userName").val();
+        if (customerId) {
+            obj.customerId = customerId;
         }
         $.ajax({
             type :"post",
-            url :'/DataSetApi/sign',
+            url : xibian.URL.ADMIN_SIGN_URL,
             data :obj,
             dataType :'json',
             success :function(r){
                 layer.closeAll('loading');
-                if(r.status==1){
-                    layer.msg(r.res);
+                if(data.code == 200){
+                    layer.msg(data.msg);
                 }else {
-                    layer.msg(r.res);
+                    layer.msg(data.msg);
                 }
             },
             error:function(){
