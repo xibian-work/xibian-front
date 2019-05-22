@@ -6,7 +6,7 @@ var xibian = {
     "URL": {
         // "ADMIN_SIGN_URL": 'http://127.0.0.1/admin/business/api/customer/sign'
         // "ADMIN_SIGN_URL": '/admin/business/api/customer/sign'
-        "ADMIN_SIGN_URL": 'http://51yujianni.com/admin/business/api/customer/sign'
+        "ADMIN_SIGN_URL": 'http://www.51yujianni.com/business/api/customer/sign'
 
     },
     validateForm:function(id,fun){
