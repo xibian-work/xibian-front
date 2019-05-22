@@ -1,6 +1,8 @@
 var main = function () {
     var customerId;
 	var init = function () {
+        //携带用户Id
+        customerId = getQueryString("customerId");
 
         xibian.validateForm("#led_class",formAjaxFun);
 
@@ -28,7 +30,7 @@ var main = function () {
             url : xibian.URL.ADMIN_SIGN_URL,
             data :obj,
             dataType :'json',
-            success :function(r){
+            success :function(data){
                 layer.closeAll('loading');
                 if(data.code == 200){
                     layer.msg(data.msg);
@@ -41,6 +43,16 @@ var main = function () {
                 layer.closeAll('loading');
             }
         });
+    };
+
+    /**
+     * 提取url?号后面的参数
+     */
+    var getQueryString = function(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
     };
 
 	init();
